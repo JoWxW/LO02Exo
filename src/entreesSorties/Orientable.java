@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package programmationOrienteeObjetAvancee;
+package entreesSorties;
 
 /**
  *
  * @author wangxian
  */
-public interface Pilotable {
-    public void accelerer();
-    public void ralentir();
+public interface Orientable {
+    public static String[] string = {"Nous tournons à", "gauche", "droite"};
+    public void tournerGauche();
+    public void tournerDroite();
 }

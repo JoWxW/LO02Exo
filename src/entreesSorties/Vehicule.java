@@ -1,25 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package programmationOrienteeObjetAvancee;
+package entreesSorties;
 
-/**
- *
- * @author wangxian
- */
+import java.io.*;
+
 public class Vehicule implements Pilotable, Orientable{
-    private int capaciteReservoie;
-    private double comsommation;
-    private int km;
+	
+    public final int capaciteReservoie = 50;
+    public final double comsommation = 0.1;
+
     private double essence;
     private boolean roule;
 
-    public Vehicule(int capaciteReservoie, double comsommation, int km, double essence, boolean roule) {
-        this.capaciteReservoie = capaciteReservoie;
-        this.comsommation = comsommation;
-        this.km = km;
+    public Vehicule(double essence, boolean roule) {
         this.essence = essence;
         this.roule = roule;
     }
@@ -36,29 +27,14 @@ public class Vehicule implements Pilotable, Orientable{
     }
 
 
-    public int getCapaciteReservoie() {
-        return capaciteReservoie;
-    }
 
-    public void setCapaciteReservoie(int capaciteReservoie) {
-        this.capaciteReservoie = capaciteReservoie;
-    }
-
-    public double getComsommation() {
-        return comsommation;
-    }
-
-    public void setComsommation(double comsommation) {
-        this.comsommation = comsommation;
-    }
-
-    public int getKm() {
+    /*public int getKm() {
         return km;
     }
 
     public void setKm(int km) {
         this.km = km;
-    }
+    }*/
 
     public double getEssence() {
         return essence;
@@ -78,12 +54,12 @@ public class Vehicule implements Pilotable, Orientable{
 
     @Override
     public void accelerer() {
-        this.km++;
+       // this.km++;
     }
 
     @Override
     public void ralentir() {
-        this.km--;
+       // this.km--;
     }
 
     @Override

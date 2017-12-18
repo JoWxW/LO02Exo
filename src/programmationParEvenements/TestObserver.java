@@ -15,8 +15,5 @@ public class TestObserver {
 		//c.compter();
 		CompteurGraphique cg = new CompteurGraphique();
 		cg.compter();
-		//FenetreForDelight fd = new FenetreForDelight();
-		//fd.compter();
-		//fd.initialiser();
 	}
 }

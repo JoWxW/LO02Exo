@@ -12,7 +12,7 @@ public class CompteurMVC extends Observable{
 	
 	public void compter() {
 		this.compte = true;
-		while(this.compte && this.compteur<51) {
+		while(this.compte && this.compteur<50) {
 			this.compteur++;
 			this.setChanged();
 			this.notifyObservers();
